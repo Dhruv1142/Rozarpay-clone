@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Clone - Frontend Only</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 p-4 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo -->
+            <a href="#" class="text-white text-2xl font-bold flex items-center">
+                <svg class="w-8 h-8 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                </svg>
+                <span class="text-blue-500">Pay</span><span class="text-white">-Clone</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="text-white md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0">
+                <a href="#" class="block md:inline-block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Products</a>
+                <a href="#" class="block md:inline-block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Solutions</a>
+                <a href="#" class="block md:inline-block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Developers</a>
+                <a href="#" class="block md:inline-block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Pricing</a>
+                <a href="#" class="block md:inline-block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Support</a>
+                <a href="#" class="block md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md ml-0 md:ml-4 mt-4 md:mt-0 transition duration-300 transform hover:scale-105">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-br from-gray-900 to-blue-900 text-center py-24 md:py-32 lg:py-40 pt-24">
+        <!-- Background elements for visual appeal -->
+        <div class="absolute inset-0 z-0 opacity-10">
+            <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke-width="0.5" stroke="#4F46E5"></circle>
+                <rect x="10" y="10" width="80" height="80" stroke-width="0.5" stroke="#4F46E5" rx="10"></rect>
+                <line x1="0" y1="50" x2="100" y2="50" stroke-width="0.2" stroke="#4F46E5"></line>
+                <line x1="50" y1="0" x2="50" y2="100" stroke-width="0.2" stroke="#4F46E5"></line>
+            </svg>
+        </div>
+        <div class="container mx-auto relative z-10 px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white drop-shadow-lg">
+                Powering the Future of Payments
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Accept payments, manage payouts, and grow your business with our robust and secure payment solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Get Started Now
+                </a>
+                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Contact Sales
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-400">Features Designed for Growth</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl border border-gray-600 transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21 10H3c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h18c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2zm-1 10H4v-6h16v6zm-1-10h-2V7h-2v3h-2V7h-2v3h-2V7H7v3H5V4h14v6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3 text-center">Seamless Payments</h3>
+                    <p class="text-gray-300 text-center">Accept payments from customers globally with a wide range of payment methods including cards, UPI, netbanking, and more.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl border border-gray-600 transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3 text-center">Automated Payouts</h3>
+                    <p class="text-gray-300 text-center">Automate vendor payments, salaries, and refunds with our powerful payout system, saving time and effort.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-xl border border-gray-600 transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-400 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3 text-center">Insightful Dashboard</h3>
+                    <p class="text-gray-300 text-center">Gain real-time insights into your transactions, settlements, and customer behavior with our intuitive dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-blue-700 to-purple-700 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Join thousands of businesses already growing with our cutting-edge payment solutions.
+            </p>
+            <a href="#" class="bg-white hover:bg-gray-200 text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Start Your Free Account
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <div class="flex flex-wrap justify-center gap-6 mb-6">
+                <a href="#" class="hover:text-white transition duration-300">About Us</a>
+                <a href="#" class="hover:text-white transition duration-300">Careers</a>
+                <a href="#" class="hover:text-white transition duration-300">Blog</a>
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+            <p>&copy; 2025 Pay-Clone. All rights reserved. This is a frontend simulation only.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
